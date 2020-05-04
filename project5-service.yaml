@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: hello-world-project5
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: LoadBalancer

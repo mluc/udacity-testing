@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-project5
+  labels:
+    app: hello-world-project5
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-world-project5
+  template:
+    metadata:
+      labels:
+        app: hello-world-project5
+    spec:
+      containers:
+      - name: hello-world-project5
+        image: myluc/udacity-devops:proj5
+        ports:
+        - containerPort: 8080
