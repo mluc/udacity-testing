@@ -7,6 +7,7 @@ echo "[default]" >> ~/.aws/credentials
 echo "aws_access_key_id = $aws_access_key_id" >> ~/.aws/credentials
 echo "aws_secret_access_key = $aws_secret_access_key" >> ~/.aws/credentials
 cat ~/.aws/credentials
+aws s3 ls
 eksctl get cluster prod2
 pwd
 ls -la
