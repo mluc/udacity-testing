@@ -29,3 +29,6 @@ kubectl describe replicasets
 kubectl get services my-service
 kubectl describe services my-service
 kubectl get pods --output=wide
+
+docker ps
+docker images
