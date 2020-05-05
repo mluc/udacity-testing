@@ -15,7 +15,7 @@ touch ~/.kube/config
 cp kube_config ~/.kube/config
 cat ~/.kube/config
 
-eksctl get cluster prod2
+eksctl get cluster -n prod2 -r us-east-1 -p default
 
 #cat ~/.kube/config
 #/usr/local/bin/kubectl version
