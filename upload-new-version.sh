@@ -17,5 +17,14 @@ ls -la
 
 eksctl get cluster -n prod2 -r us-east-1 -p default
 
-#cat ~/.kube/config
-#/usr/local/bin/kubectl version
+kubectl apply -f project5-deployment.yaml
+kubectl apply -f project5-service.yaml
+
+sleep 10
+
+kubectl get deployments
+kubectl get replicasets
+kubectl describe replicasets
+kubectl get services my-service
+kubectl describe services my-service
+kubectl get pods --output=wide
