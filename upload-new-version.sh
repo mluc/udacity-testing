@@ -1,6 +1,6 @@
 #!/bin/bash -e
 eksctl version
-cat ~/.aws/credentials
+mkdir ~/.aws
 touch ~/.aws/credentials
 cat ~/.aws/credentials
 echo "[default]" >> ~/.aws/credentials
