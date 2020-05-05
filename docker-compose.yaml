@@ -4,6 +4,6 @@ services:
     container_name: project5
     build:
       context: .
-    image: myluc/project5
+    image: myluc/project5:V1
     ports:
       - 8080:8080
