@@ -19,5 +19,7 @@ before_install:
 
 install:
   - docker-compose -f docker-compose-build.yaml build
+  - pwd
+  - /usr/local/bin/kubectl version
   - cat ~/.kube/config
-  - kubectl version
+
