@@ -20,8 +20,8 @@ before_install:
   - eksctl version
   # - eksctl get cluster prod2
 
-install:
-  - docker-compose -f docker-compose-build.yaml build
+#install:
+#  - docker-compose -f docker-compose-build.yaml build
 
 script:
   - bash ./upload-new-version.sh
