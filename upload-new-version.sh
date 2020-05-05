@@ -10,10 +10,10 @@ echo "aws_secret_access_key = $aws_secret_access_key" >> ~/.aws/credentials
 pwd
 ls -la
 
-mkdir ~/.kube
-touch ~/.kube/config
-cp kube_config ~/.kube/config
-cat ~/.kube/config
+#mkdir ~/.kube
+#touch ~/.kube/config
+#cp kube_config ~/.kube/config
+#cat ~/.kube/config
 
 eksctl get cluster -n prod2 -r us-east-1 -p default
 
