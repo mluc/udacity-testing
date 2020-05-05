@@ -23,10 +23,9 @@ before_install:
   - mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin
   - echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
   - aws-iam-authenticator help
-  # - eksctl get cluster prod2
 
-#install:
-#  - docker-compose -f docker-compose-build.yaml build
+install:
+  - docker-compose -f docker-compose-build.yaml build
 
 script:
   - bash ./upload-new-version.sh
