@@ -18,5 +18,5 @@ before_install:
 
 
 install:
-  - echo `hello!!!`
   - docker-compose -f docker-compose-build.yaml build
+  - kubectl version
