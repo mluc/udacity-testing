@@ -33,13 +33,13 @@ kubectl get pods --output=wide
 docker ps
 docker images
 
-kubectl set image deployments/hello-world-project5 hello-world-project5=myluc/project5:V1
-sleep 10
-kubectl rollout status deployments/hello-world-project5
-
-kubectl get deployments
-kubectl get replicasets
-kubectl describe replicasets
-kubectl get services my-service
-kubectl describe services my-service
-kubectl get pods --output=wide
+#kubectl set image deployments/hello-world-project5 hello-world-project5=myluc/project5:V1
+#sleep 10
+#kubectl rollout status deployments/hello-world-project5
+#
+#kubectl get deployments
+#kubectl get replicasets
+#kubectl describe replicasets
+#kubectl get services my-service
+#kubectl describe services my-service
+#kubectl get pods --output=wide
