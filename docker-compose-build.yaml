@@ -3,4 +3,4 @@ services:
   project5:
     build:
       context: .
-    image: myluc/project5:V1
+    image: myluc/project5
