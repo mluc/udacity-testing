@@ -24,8 +24,8 @@ before_install:
   - echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
   - aws-iam-authenticator help
 
-#install:
-#  - docker-compose -f docker-compose-build.yaml build
+install:
+  - docker-compose -f docker-compose-build.yaml build
 
 script:
   - bash ./run_docker.sh
