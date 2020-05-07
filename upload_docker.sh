@@ -1,4 +1,4 @@
-dockerpath=myluc/udacity-devops:proj5
+dockerpath=myluc/udacity-devops:proj6
 
 
 echo "Docker ID and Image: $dockerpath"
