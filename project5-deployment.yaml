@@ -15,12 +15,10 @@ spec:
   selector:
     matchLabels:
       app: hello-world-project6
-      track: stable
   template:
     metadata:
       labels:
         app: hello-world-project6
-        track: stable
     spec:
       containers:
       - name: hello-world-project6
