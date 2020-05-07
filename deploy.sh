@@ -15,7 +15,7 @@ cat ~/.kube/config
 
 eksctl get cluster -n prod2 -r us-east-1 -p default
 
-kubectl apply -f project5-deployment.yaml -f project5-deployment-new.yaml -f project5-service.yaml
+kubectl apply -f project5-deployment.yaml -f project5-service.yaml
 
 sleep 10
 
