@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e -x
 
-dockerpath=myluc/udacity-devops:proj13
+dockerpath=myluc/udacity-devops:proj14
 
 sudo docker system prune -f
 sudo docker build -t $dockerpath .
