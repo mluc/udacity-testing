@@ -1,9 +1,9 @@
 version: "3"
 services:
-  project5:
-    container_name: project5
+  project6:
+    container_name: project6
     build:
       context: .
-    image: myluc/project5
+    image: myluc/project6
     ports:
       - 8080:8080

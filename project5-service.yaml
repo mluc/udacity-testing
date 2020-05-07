@@ -4,7 +4,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    app: hello-world-project5
+    app: hello-world-project6
   ports:
     - port: 8080
       targetPort: 8080

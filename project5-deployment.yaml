@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world-project5
+  name: hello-world-project6
   labels:
-    app: hello-world-project5
+    app: hello-world-project6
 spec:
   replicas: 2
   strategy:
@@ -13,14 +13,14 @@ spec:
       maxSurge: 1
   selector:
     matchLabels:
-      app: hello-world-project5
+      app: hello-world-project6
   template:
     metadata:
       labels:
-        app: hello-world-project5
+        app: hello-world-project6
     spec:
       containers:
-      - name: hello-world-project5
+      - name: hello-world-project6
         image: myluc/udacity-devops:proj5
         ports:
         - containerPort: 8080

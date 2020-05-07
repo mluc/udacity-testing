@@ -1,6 +1,6 @@
 version: "3"
 services:
-  project5:
+  project6:
     build:
       context: .
-    image: myluc/project5
+    image: myluc/project6

@@ -18,8 +18,8 @@ cat ~/.kube/config
 
 eksctl get cluster -n prod2 -r us-east-1 -p default
 
-kubectl apply -f project5-deployment.yaml
-#kubectl apply -f project5-service.yaml
+kubectl apply -f project6-deployment.yaml
+#kubectl apply -f project6-service.yaml
 
 sleep 10
 
@@ -33,9 +33,9 @@ kubectl get pods --output=wide
 docker ps
 docker images
 
-#kubectl set image deployments/hello-world-project5 hello-world-project5=myluc/project5:V1
+#kubectl set image deployments/hello-world-project6 hello-world-project6=myluc/project6:V1
 #sleep 10
-#kubectl rollout status deployments/hello-world-project5
+#kubectl rollout status deployments/hello-world-project6
 #
 #kubectl get deployments
 #kubectl get replicasets

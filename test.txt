@@ -24,7 +24,7 @@ pipeline {
         stage('Apply Kubernetes deployment file') {
             steps {
               withKubeConfig([credentialsId: 'jenkins-deployer-credentials', serverUrl: 'https://A29B762498A21F68BAACAD1FA6B186A5.sk1.us-east-1.eks.amazonaws.com']) {
-              sh 'kubectl apply -f project5-deployment.yaml'
+              sh 'kubectl apply -f project6-deployment.yaml'
               }
             }
           }
@@ -32,7 +32,7 @@ pipeline {
         stage('Apply Kubernetes service file') {
             steps {
               withKubeConfig([credentialsId: 'jenkins-deployer-credentials', serverUrl: 'https://A29B762498A21F68BAACAD1FA6B186A5.sk1.us-east-1.eks.amazonaws.com']) {
-              sh 'kubectl apply -f project5-service.yaml'
+              sh 'kubectl apply -f project6-service.yaml'
               }
             }
           }
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 withKubeConfig([credentialsId: 'jenkins-deployer-credentials',
                                 serverUrl: 'https://A29B762498A21F68BAACAD1FA6B186A5.sk1.us-east-1.eks.amazonaws.com',
-                                contextName: 'project5@prod.us-east-1.eksctl.io',
+                                contextName: 'project6@prod.us-east-1.eksctl.io',
                                 clusterName: 'prod.us-east-1.eksctl.io'
                                 ]) {
                   sh 'kubectl get deployments'
