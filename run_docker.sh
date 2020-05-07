@@ -1,2 +1,2 @@
 sudo docker system prune -f
-sudo docker build --tag=project6 .
+sudo docker build -t myluc/udacity-devops:proj10 .

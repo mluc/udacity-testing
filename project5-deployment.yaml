@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: hello-world-project6
-        image: myluc/udacity-devops:proj6
+        image: myluc/udacity-devops:proj10
         ports:
         - containerPort: 8080

@@ -1,8 +1,10 @@
-dockerpath=myluc/udacity-devops:proj6
+#!/bin/bash
+set -e -x
 
+dockerpath=myluc/udacity-devops:proj10
 
-echo "Docker ID and Image: $dockerpath"
+sudo docker system prune -f
+sudo docker build -t $dockerpath .
+
 sudo docker login --username myluc --password "$dockerhub"
-sudo docker tag project6 $dockerpath
-
 sudo docker push $dockerpath
